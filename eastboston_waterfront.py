@@ -8,30 +8,25 @@ SF_PER_ACRE = 43560
 st.title('East Boston Waterfront for All')
 
 st.write("""
-East Boston, like much of the Greater Boston Area, is experiencing a housing crisis of unprecedented scale
-driven by immense demand for housing, fueling development pressure and displacement. Once a 
-naturally-affordable community for immigrant families to raise their children in the neighborhood's iconic
-triple-deckers, as other parts of the city became more expensive, prices in East Boston have skyrocketed, buoyed
-by the Blue Line's convenient access to downtown along with views of the city.
-"""
+More and more people want live in Boston because it's a great place to live: top-notch universities,
+desireable employers, rich history and culture, and, of course, amazing people. People need places to
+live. However, there aren't enough homes to accomodate the increase in population. With
+more people competing for each available home, those who can and are willing to pay more push prices
+higher. As a result, East Boston, like much of the Greater Boston Area, has a growing housing crisis
+of an already enormous scale driven by an imbalance of housing supply with demand, fueling displacement
+of those who cannot compete and afford higher prices.
 
-# + """As a result, it's become increasingly hard for residents, especially more vulnerable renters, to be able to
-# remain in a community they've been a part of for years. With smaller options primarily located within newer
-# developments targeted for working professionals, older homeowners who no longer need as large of space
-# aren't able to afford to downsize while still remaining in the neighborhood, locking in critically-needed inventory."""
+Higher prices fuels development activity, which is how a housing market should work. Development creates
+new supply, when then counteracts demand, helping reduce the pressure to increase prices. Because land
+is limited, to accomodate new housing, you need density, so buildings generally need to get taller. If
+changes in what's allowed to get built--zoning--don't happen, instead of development, only renovations
+happen, which enable landlords to cater towards those with higher income.
 
-+ """
-To accomodate a growing population and build a better city, greater density is necessary and neighborhood change
-is a prerequisite and will happen whether residents want it or not. Left to run its own course this drives
-gentrification, but it doesn't have to be that way. We can build new homes while still retaining diversity and
-supporting vulnerable communities.
-
-One key place where a long-overdue conversation is finally emerging is the East Boston waterfront.
-
-Read on to
-learn more about what residents could make possible here!
+As a result, once a community for immigrant families to raise their children has increasingly become
+challenging to preserve as prices in East Boston have skyrocketed, buoyed by the Blue Line's convenient
+access to downtown along with views of the city. The neighborhood's iconic triple-deckers, which created
+greater density to accomodate an earlier population boom, now are largely out-of-reach.
 """)
-
 st.header("East Boston by the numbers")
 
 households_homes = pd.DataFrame([
@@ -75,6 +70,37 @@ st.markdown(hide_table_row_index, unsafe_allow_html=True)
 st.table(households_homes)
 
 st.caption("Sources: U.S. Census Bureau - American Community Survey 2020; City of Boston Open Data Portal")
+
+st.header("Planning ahead")
+
+st.write(
+# + """As a result, it's become increasingly hard for residents, especially more vulnerable renters, to be able to
+# remain in a community they've been a part of for years. With smaller options primarily located within newer
+# developments targeted for working professionals, older homeowners who no longer need as large of space
+# aren't able to afford to downsize while still remaining in the neighborhood, locking in critically-needed inventory."""
+
+"""
+To accomodate a growing population and build a better city, neighborhood change is a prerequisite
+and density is necessary because undeveloped land is limited. Left to run its own course this can drive
+gentrification, but it doesn't have to be that way. We can build new homes while still retaining
+diversity and supporting vulnerable communities through housing stock that spans the range of needs,
+but it does mean that compromise needs to happen and trade-offs need to evaluated. The alternative—to
+stop building altogether—rejects the progress and dynamism that makes Boston great and slams the door
+on the long standing history of welcoming newcomers.
+
+At the same time, preserving the character and culture of East Boston is critical. The question is:
+what parts are most important and what parts should change in light of the changing circumstances?
+Is it more important to keep how things look on the outside of buildings or a diversity of people
+that span income and backgrounds? In an era of climate change and growing congestion, is it more
+important to prioritize space for cars over families or should we seek alternative means of mobility
+and reclaim space for people to use?
+
+One place where pretty much everyone can agree needs to change is the East Boston waterfront.
+A long-overdue conversation is finally emerging here about how land set aside for the marine
+industrial sector should be used to best serve East Boston. 
+
+Read on to learn more about some of the possibilities here!
+""")
 st.header("The East Boston Designated Port Area")
 
 st.write("""
